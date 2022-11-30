@@ -1,1 +1,1 @@
-Python shell scripting and programming
+Python shell scripts and programming
