@@ -1,0 +1,19 @@
+The ``5-text_indentation`` module
+=================================
+Using ``text_indentation``
+--------------------------------
+
+import text_indentation from 5-text_indentation
+       >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Case 1: text is not a string
+
+Case 2: text is an empty string
+
+Case 3: text has none of the delimiters
+
+Case 4: text is a string of only delimiters
+
+Case 5: 
+
+Case 6:

@@ -1,0 +1,16 @@
+The ``3-say_my_name`` module
+============================
+
+Using ``say_my_name``
+---------------------
+
+
+import say_my_name from 0-say_my_name
+       >>> say_my_name = __import__('0-say_my_name').say_my_name
+
+Case 1: empty first name
+
+Case 2: empty last name
+
+Case 3: first or last name is not a string
+     both are not strings

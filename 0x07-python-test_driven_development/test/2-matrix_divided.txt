@@ -1,0 +1,20 @@
+The ``2-matrix_divided`` module
+===============================
+
+``Using matrix_divided``
+------------------------
+
+import matrix_divided from 2-matrix_divided
+       >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Case 1: argument isn't a list of lists (a matrix)
+     argument is a string
+
+Case 2: empty list
+
+Case 3: inner lists are not the same length
+
+Case 4: divisor is not a number
+     divisor is a string
+
+Case 5: div is 0

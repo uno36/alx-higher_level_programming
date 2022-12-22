@@ -1,0 +1,74 @@
+The ``0-add_integer`` module
+=============================
+
+Using ``add_integer``
+----------------------
+
+Import add_integer from 0-add_integer
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Test: both arguments are invalid
+    >>> add_integer("Holberton", "School")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test: a or b is an invalid argument (not an int or float)
+    >>> add_integer('a', 9)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(9, 'beta')
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+Test: a = None, b is passed
+    >>> add_integer(None, 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test: a is passed, b defaults (a = 22, b = 98)
+    >>> add_integer(22)
+    120
+
+Test: single float argument
+    >>> add_integer(12.74)
+    110
+
+    >>> add_integer(-48.43)
+    50
+
+Test: negative numbers (-a, +b), (+a, -b), (-a, -b), (-a, float b)
+    >>> add_integer(-12, 10)
+    -2
+
+    >>> add_integer(27, -14)
+    13
+
+    >>> add_integer(-4, -8)
+    -12
+
+    >>> add_integer(-12, 28.4)
+    16
+
+Test: float + int
+    >>> add_integer(12.5, 4)
+    16
+
+    >>> add_integer(50, 48.9)
+    98
+
+Test: no arguments are passed
+     >>> add_integer(None)
+     Traceback (most recent call last):
+     TypeError: a must be an integer
+
+Test: both numbers are floats
+    >>> add_integer(51.8, 49.9)
+    100
+
+    >>> add_integer(0.1, -0.1)
+    0
+
+Test: big numbers
+      >>> add_integer(9999999, 9999999)
+      19999998

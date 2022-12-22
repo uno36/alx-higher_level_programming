@@ -1,0 +1,17 @@
+The ``4-print_square`` module
+=============================
+Using ``print_square``
+----------------------
+
+import print_square from 4-print_square
+       >>> print_square = __import__('4-print_square').print_square
+
+Case 1: size is not an int
+
+Case 2: size < 0
+
+Case 3: size == 0
+
+Case 4: size is a float && size < 0.0
+
+Case 5: all is well
