@@ -1,0 +1,37 @@
+""" test say_my_name function """
+
+""" import say_my_name function """
+>>> f = __import__('3-say_my_name').say_my_name
+
+>>> f()
+Traceback (most recent call last):
+...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+>>> f("John", "Smith")
+My name is John Smith
+
+>>> f("Bob")
+My name is Bob 
+
+>>> f("")
+My name is  
+
+>>> f(("set"),)
+My name is set 
+
+>>> f("[list]","[type]")
+My name is [list] [type]
+
+>>> f("","Bob")
+My name is  Bob
+
+>>> f(12, "White")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> f("Walter", 12)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string

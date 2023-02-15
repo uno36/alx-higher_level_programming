@@ -1,0 +1,42 @@
+""" test rint_square function """
+
+""" import rint_square function """
+>>> f = __import__('4-print_square').print_square
+
+>>> f(4)
+####
+####
+####
+####
+
+>>> f(0)
+
+>>> f()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> f(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+>>> f("h")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> f(-2.3)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> f(2.3)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> f(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer

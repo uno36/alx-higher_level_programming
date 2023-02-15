@@ -1,0 +1,80 @@
+""" test text_indentation function """
+
+""" import text_indentation function """
+>>> f = __import__('5-text_indentation').text_indentation
+
+>>> f("""My name is Bob. where? here: what""")
+My name is Bob.
+<BLANKLINE>
+where?
+<BLANKLINE>
+here:
+<BLANKLINE>
+what
+
+>>> f("""My name is Bob. where? here:""")
+My name is Bob.
+<BLANKLINE>
+where?
+<BLANKLINE>
+here:
+<BLANKLINE>
+
+>>> f("")
+
+>>> f("""Lorem:            ?      \n""")
+Lorem:
+<BLANKLINE>
+?
+<BLANKLINE>
+<BLANKLINE>
+
+>>> f("?")
+?
+<BLANKLINE>
+
+>>> f(":")
+:
+<BLANKLINE>
+
+>>> f(".")
+.
+<BLANKLINE>
+
+>>> f("\n")
+<BLANKLINE>
+
+
+>>> f("a")
+a
+
+>>> f("\n ")
+<BLANKLINE>
+
+>>> f("\n.")
+<BLANKLINE>
+.
+<BLANKLINE>
+
+>>> f("\nabc")
+<BLANKLINE>
+abc
+
+>>> f("\n abc")
+<BLANKLINE>
+abc
+
+>>> f("\n         abc")
+<BLANKLINE>
+abc
+>>> f("\n a bc   ")
+<BLANKLINE>
+a bc
+
+>>> f("hjk\n abc   ")
+hjk
+abc
+
+>>> f("abc     ")
+abc
+

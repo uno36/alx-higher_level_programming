@@ -1,0 +1,46 @@
+"""test	print_sorted method"""
+>>> L = __import__('1-my_list').MyList
+
+>>> my_list = L()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.print_sorted()
+[1, 2, 4]
+
+>>> m =	L([2, 5, 6, 1, 4])
+>>> m.print_sorted()
+[1, 2, 4, 5, 6]
+>>> m
+[2, 5, 6, 1, 4]
+
+>>> m =	L([True, False])
+>>> m.print_sorted()
+[False, True]
+
+>>> m =	L(["s", "a"])
+>>> m.print_sorted()
+['a', 's']
+
+>>> m =	L({"s", "a"})
+>>> m.print_sorted()
+['a', 's']
+
+>>> m =	L({2, 5, 6, 1, 3})
+>>> m.print_sorted()
+[1, 2, 3, 5, 6]
+
+>>> m =	L("2")
+>>> m.print_sorted()
+['2']
+
+>>> m =	L(2)
+Traceback (most recent call last):
+...
+TypeError: 'int' object is not iterable
+
+>>> m =	L()
+>>> m.print_sorted()
+[]
+
+
