@@ -13,8 +13,9 @@ if __name__ == '__main__':
         passwd=sys.argv[2],
         db=sys.argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * FROM states")
-    list_states = cur.fetchall()
-    for state in list_states:
-        print("{}".format(state))
+    cur.execute("SELECT * FROM states ORDER BY id ASC;")
+    for row in cur.fetchall():
+        print(row)
+
+    cur.close()
     db.close()
