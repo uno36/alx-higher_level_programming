@@ -1,3 +1,3 @@
 #!/bin/bash
-# Bash script that takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
-curl -H "X-HolbertonSchool-User-Id: 98" -s "$1"
+# send a GET request to the URL using curl, and display the body of the response
+curl -sH "X-School-User-Id: 98" "$1"
